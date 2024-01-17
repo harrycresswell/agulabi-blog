@@ -1,8 +1,8 @@
 ---
 title: "First post"
 _build:
-  render: never
-  list: never
+  render: true
+  list: true
   publishResources: true
 ---
 
