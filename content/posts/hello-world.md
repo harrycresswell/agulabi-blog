@@ -1,9 +1,9 @@
 ---
-title: "Content Placeholder"
+title: "First post"
 _build:
   render: never
   list: never
-  publishResources: false
+  publishResources: true
 ---
 
 This is my first post
