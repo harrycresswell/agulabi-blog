@@ -4,14 +4,14 @@ subtitle: ""
 date: 2024-01-18T12:08:10Z
 lastmod: 2024-01-18T12:08:10Z
 draft: false
-author: [author]
+author: "Abdullah Gulabi"
 authorLink: ""
 description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: ["privacy", "surveillance", "tech", "data sovereignty"]
+categories: ["articles"]
 
 featuredImage: ""
 featuredImagePreview: ""
