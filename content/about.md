@@ -10,8 +10,8 @@ description: ""
 license: ""
 images: []
 
-tags: ["profile"]
-categories: ["About"]
+tags: [""]
+categories: [""]
 
 featuredImage: ""
 featuredImagePreview: ""
