@@ -174,21 +174,21 @@ The surprisingly low cost of all these is at the end bit (spoiler: about  64 GBP
 I intend this post to serve as my data ownership story. I hope to start a discussion with like minded people and hope to learn from you.
 > This is an updated version of an article I published on [my website oriented for the Turkish speaking youth.](https://muhendisrehberi.com/kisisel-verileri-paylasmamak/)
 
-# 0. Domain
+#0. Domain
 [Cloudflare](https://www.cloudflare.com/products/registrar/) has an at-cost registrar service, meaning you can pay the absolute lowest fee possible to register and later renew a domain name. 
 
 Owning a domain name will be crucial in owning your data. If you're aware of other alternatives boasting at-cost pricing let me know and I can include them in this list. 
 
 I haven't included this in the table above as it really boils down to your decision, does not change anything for the subsequent items.
 
-## 1. Passwords
+#1. Passwords
 Privacy is not possible without security and using unique and strong passwords is one of the single most effective steps to take in achieving security and privacy. 
 
 [Bitwarden](https://bitwarden.com/) is an excellent [zero-knowledge](https://bitwarden.com/resources/zero-knowledge-encryption-white-paper/) open source password manager that can sync across devices. 
 
 [LessPass](https://www.lesspass.com/#/) is a great alternative that does not even need to sync yet can be used across devices.
 
-## 2. E-mail
+#2. E-mail
 E-mail is [not a secure form of communication and has its flaws](https://www.jdfoxmicro.com/resource-center/articles/email-is-insecure/#SkipSidebar). It is however universally used and is crucial for your web presence. Ensuring its at least a little bit safer should be a priority, even [FBI's e-mail server get hacked from time to time!](https://www.nbcnews.com/tech/security/hacker-takes-fbi-email-server-blasts-spam-thousands-rcna5530)!
 
 I chose to set up a [VPS (Virtual Private Server)](https://www.ionos.co.uk/servers/vps#packages) with a [hosting company](https://www.ionos.co.uk/) running an open source operating system ([Ubuntu](https://ubuntu.com/download/desktop)). 
@@ -201,7 +201,7 @@ Hestia also allows for one-click installation of [WordPress](https://wordpress.o
 
 There are excellent zero-knowledge encrypted e-mail service providers like [Tutanota](https://tutanota.com) or [ProtonMail](https://protonmail.com/) if you wish to simply use secure and private e-mail, both offering free tiers.
 
-## 3. Mobile Device
+#3. Mobile Device
 A privacy respecting mobile device is crucial in the whole set up. I decided to prioritize privacy and security above all and found [GrapheneOS](https://grapheneos.org/) to fit the bill. I then had to choose a mobile device that supports this flavour of Android as an operating system (OS).
 
 Custom (and unGoogled) OS variants are more private as they offer absolute control over app's access to device data and features. No access is granted "by default", access is rather "by explicit consent" allowing you to prevent apps from connecting to networks, accessing storage or sensor data. [Here](https://www.forbes.com/sites/zakdoffman/2021/10/23/apple-iphone-users-delete-facebook-app-after-new-tracking-warning/) is a good example why this would be necessary.
@@ -212,14 +212,14 @@ Despite the privacy focused marketing push from Apple, iPhones are not any diffe
 
 I am still in search of a similar privacy friendly solution for a modern tablet device, please let me know if you have any recommendations!
 
-## 4. App Store
+#4. App Store
 The privacy respecting mobile device does not have ready access to the app stores we're accustomed to but there are excellent repositories full of open-source and privacy respecting apps, such as [F-Droid](https://f-droid.org/).
 
 F-droid is a repository, works just other app stores with the main difference being that it contains only free and open source software.
 
 [Aurora Store](https://auroraoss.com/download/AuroraStore/) is useful for cases where there are no open source alternatives to the apps in question, like your mobile banking app for instance. You can anonymously access the entire Google Play Store catalogue through Aurora Store.
 
-## 5. Navigation
+#5. Navigation
 One of the best things about big-tech and Google in particular is seamless search and navigation. It is however possible to completely replace and surpass the functionality offered by the likes of Google or Apple Maps with open source alternatives.
 
 [OSMAnd+](https://f-droid.org/en/packages/net.osmand.plus/) provides map and navigation with support for offline navigation, voice directions and more. A great alternative is [Magic Earth](https://www.magicearth.com/).
