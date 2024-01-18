@@ -59,7 +59,6 @@ seo:
   # ...
 ---
 
-<!--more-->
 I believe in sharing data, information and knowledge, but not private data. This is an outline of my solution to keeping the tech in my life while keeping big tech out.
 
 The table below is a good summary of the entire post, scroll down for details and links for each. This post is more about how, and less about why.
