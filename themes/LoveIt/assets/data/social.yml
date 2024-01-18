@@ -1,6 +1,6 @@
 # 001: Github
 github:
-  Weight: 1
+  Weight: 2
   Prefix: https://github.com/
   Title: GitHub
   Icon:
@@ -8,7 +8,7 @@ github:
 
 # 002: LinkedIn
 linkedin:
-  Weight: 2
+  Weight: 1
   Prefix: https://linkedin.com/in/
   Title: LinkedIn
   Icon:
