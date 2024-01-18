@@ -4,7 +4,7 @@ subtitle: ""
 date: 2020-03-20T21:54:09Z
 lastmod: 2024-01-18T23:39:09Z
 draft: false
-author: [author]
+author: "Abdullah Gulabi"
 authorLink: ""
 description: ""
 license: ""
