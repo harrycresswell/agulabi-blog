@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: ["privacy", "Covid", "gizlilik", "privacy"]
-categories: [Blog]
+categories: ["Blog"]
 
 featuredImage: ""
 featuredImagePreview: ""
@@ -63,7 +63,7 @@ Pandemi haline gelen Covid-19 salgını ve buna karşı alınan önlemler ülked
 <!--more-->
 > 2020 yılının başında, Covid-19 salgını başlangıcında ülkelerin salgınla mücadele kapsamında devreye aldıkları uygulamarı veri gizliliği açısından değerlendirdiğim makale.
 
-> Article from early 2020, My evaluation on the responses of various countries' Covid-19 responses and their data privacy implications.
+> This article is from early 2020, I've left it accessible for arhive purposes. my evaluation on the responses of various countries' Covid-19 responses and their data privacy implications.
 
 
 Birey ve toplum düzeyinde can güvenliğimizin derdine düştüğümüz bu dönemde verilerimizin gizliliği ne durumda?

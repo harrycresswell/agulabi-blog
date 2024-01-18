@@ -60,10 +60,10 @@ seo:
 ---
 
 <!--more-->
-## About Me
+### About Me
 I enjoy tackling engineering and business challenges. I believe in privacy and ownership of personal data. I believe in sharing and building our collective body of knowledge.
 
-## Professional Experience
+### Professional Experience
 Currently working on transforming the AEC industry with Dassault Systèmes. Previous experience in digital transformation of steel fabrication industries, offsite modular rebar, data centre design and engineering, industrial and infrastructure projects in Sub-Saharan Africa, and consulting.
 
 #### Dassault Systèmes (since '23), United Kingdom
@@ -90,10 +90,10 @@ Building materials sales in the ECOWAS market.
 #### LASG ('10 – '12), Nigeria
 Consultancy to the Lagos State Government Ministry of Women Affairs and Poverty Alleviation.
 
-## Education
+### Education
 I have a master's degree in Construction Engineering and Management, an MBA and a Structural/Civil Engineering degree. 
 
-## Contact Me
+### Contact Me
 Currently in London. Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/abdullahgulabi) or simply send me an e-mail: abdullah *at* gula *dot* bi
 
 ### Web Presence
