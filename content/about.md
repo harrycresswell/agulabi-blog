@@ -1,6 +1,6 @@
 ---
-title: "Me"
-subtitle: ""
+title: "Abdullah Gulabi"
+subtitle: "A curious engineer"
 date: 2024-01-18T22:49:07Z
 lastmod: 2024-01-18T22:49:07Z
 draft: false
@@ -10,13 +10,13 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: ["profile"]
+categories: ["About"]
 
 featuredImage: ""
 featuredImagePreview: ""
 
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 hiddenFromSearch: false
 twemoji: false
 lightgallery: true
