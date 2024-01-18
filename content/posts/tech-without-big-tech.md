@@ -1,16 +1,9 @@
-+++
-title = 'Tech Without Big Tech'
-date = 2024-01-18T12:08:10Z
-draft = true
-+++
-
-
 ---
 title: "Tech Without Big Tech"
 subtitle: ""
 date: 2024-01-18T12:08:10Z
 lastmod: 2024-01-18T12:08:10Z
-draft: true
+draft: false
 author: [author]
 authorLink: ""
 description: ""
