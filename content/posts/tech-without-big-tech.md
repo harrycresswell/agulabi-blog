@@ -174,14 +174,14 @@ The surprisingly low cost of all these is at the end bit (spoiler: about  64 GBP
 I intend this post to serve as my data ownership story. I hope to start a discussion with like minded people and hope to learn from you.
 > This is an updated version of an article I published on [my website oriented for the Turkish speaking youth.](https://muhendisrehberi.com/kisisel-verileri-paylasmamak/)
 
-# 0. Domain
+## 0. Domain
 [Cloudflare](https://www.cloudflare.com/products/registrar/) has an at-cost registrar service, meaning you can pay the absolute lowest fee possible to register and later renew a domain name. 
 
 Owning a domain name will be crucial in owning your data. If you're aware of other alternatives boasting at-cost pricing let me know and I can include them in this list. 
 
 I haven't included this in the table above as it really boils down to your decision, does not change anything for the subsequent items.
 
-# 1. Passwords
+##### 1. Passwords
 Privacy is not possible without security and using unique and strong passwords is one of the single most effective steps to take in achieving security and privacy. 
 
 [Bitwarden](https://bitwarden.com/) is an excellent [zero-knowledge](https://bitwarden.com/resources/zero-knowledge-encryption-white-paper/) open source password manager that can sync across devices. 
