@@ -58,13 +58,13 @@ seo:
   images: []
   # ...
 ---
+Pandemi haline gelen Covid-19 salgını ve buna karşı alınan önlemler ülkeden ülkeye farklılık gösteriyor. Kimi ülke yayılmayı durdurmayı başarabildi, kimisi de durdurmaya yaklaşıyor ancak çoğu ülke için mücadele daha yeni başlıyor.
 
 <!--more-->
 > 2020 yılının başında, Covid-19 salgını başlangıcında ülkelerin salgınla mücadele kapsamında devreye aldıkları uygulamarı veri gizliliği açısından değerlendirdiğim makale.
 
 > Article from early 2020, My evaluation on the responses of various countries' Covid-19 responses and their data privacy implications.
 
-Pandemi haline gelen Covid-19 salgını ve buna karşı alınan önlemler ülkeden ülkeye farklılık gösteriyor. Kimi ülke yayılmayı durdurmayı başarabildi, kimisi de durdurmaya yaklaşıyor ancak çoğu ülke için mücadele daha yeni başlıyor.
 
 Birey ve toplum düzeyinde can güvenliğimizin derdine düştüğümüz bu dönemde verilerimizin gizliliği ne durumda?
 
