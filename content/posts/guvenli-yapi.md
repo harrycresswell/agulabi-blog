@@ -1,18 +1,71 @@
-+++
-title = 'Güvenli Yapı Üretimi'
-date = 2023-03-01T00:28:23Z
-draft = false
-+++
+---
+title: "Güvenli Yapı Üretimi"
+subtitle: "Güvenilmez inşaat sektörü ile güvenli yapı imalatı."
+date: 2023-03-01T00:28:23Z
+lastmod: 2023-03-01T00:28:23Z
+draft: false
+author: "Abdullah Gulabi"
+authorLink: ""
+description: ""
+license: ""
+images: []
 
+tags: ["BIM", "ISO 19650", "Yapı Bilgi Yönetimi", "deprem", "CARES", "kalite", "güvence", "inşaat mühendisliği"]
+categories: ["Mühendis Rehberi"]
 
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
+---
 # Güvenli Yapı Üretimi
 
 6 Şubat depremleri ile pek çok insanımızı kaybettik. Hissettiğimiz acıyı artıran bir gerçek ise şuydu: can kayıpların tamamı önlenebilir, diğer zararlar da önemli ölçüde azaltılabilirdi.
 
 Japonya ve Şili gibi ülkeler, yeryüzünün en şiddetli depremleriyle yaşamanın mümkün olduğunun, insanlığın depreme karşı çaresiz olmadığının kanıtı.
 
-Deprem ülkesi Türkiye’de bir sonraki yıkıcı depreme geri sayım başlamış iken, elimizdeki imkanları başta can olmak üzere tüm kayıpları önlemeye yönlendirmeliyiz.
-
+Deprem ülkesi Türkiye’de bir sonraki yıkıcı depreme geri sayım başlamış iken, elimizdeki imkanları başta can olmak üzere tüm kayıpları önlemeye yönlendirmeliyiz. 
+<!--more-->
 Depremde yıkılmayan, hasar almayan, depremden hemen sonra, hatta deprem anında dahi hizmet vermeye devam eden yapılarımız ise, Türkiye’nin de depreme karşı çaresiz olmadığının kanıtı. 
 
 Buna karşılık yıkılmayarak can kaybını önleyen pek çok sayıda yapı ise, tasarım öngörüleri kapsamında hasar almak suretiyle can güvenliğini sağlamış ancak çeşitli derecelerde hasar sebebiyle önemli ekonomik kayıplara neden olmuştur.
@@ -114,7 +167,6 @@ Böylelikle projelendirmeden malzeme tedariğine, fabrika ortamında kesme, bük
 Benzer yöntem ile, sahaya sevki yapılan her mikser ile o gün dökülen beton model üzerinde ilişkilendirildiğinde, hangi kolonun betonu hangi hazır beton fabrikasından hangi mikser ile sevk edildi, ne kadar zaman içinde hangi şartlarda kalıba döküldü, kalıp ne zaman söküldü gibi ilgili tüm kayıtların modele işlenmesi mümkündür.
 
 Betonarme malzemenin ötesinde kaplamalar veya yangın güvenliğine etki edecek diğer tüm kalemler de bu sisteme dahil edilbilir.
-
 
 ## Gelecekteki İyileştirmeler
 Yukarıda tarif edilenler, dünyada hali hazırda uygulaması olan, gerçek, işleyen sistemlerdir. Mevcut şartlarda iyileştirmeleri beklemeksizin Türkiye’de hayata geçirilmeleri için herhangi bir engel olmadığı gibi başta fabrika ortamında üretimin getirdiği fire azalması, kalite güvencesi gibi kazançlar teşvik edici unsurlardır.
