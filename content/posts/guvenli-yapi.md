@@ -58,7 +58,6 @@ seo:
   images: []
   # ...
 ---
-# Güvenli Yapı Üretimi
 
 6 Şubat depremleri ile pek çok insanımızı kaybettik. Hissettiğimiz acıyı artıran bir gerçek ise şuydu: can kayıpların tamamı önlenebilir, diğer zararlar da önemli ölçüde azaltılabilirdi.
 
@@ -66,6 +65,9 @@ Japonya ve Şili gibi ülkeler, yeryüzünün en şiddetli depremleriyle yaşama
 
 Deprem ülkesi Türkiye’de bir sonraki yıkıcı depreme geri sayım başlamış iken, elimizdeki imkanları başta can olmak üzere tüm kayıpları önlemeye yönlendirmeliyiz. 
 <!--more-->
+
+# Güvenli Yapı Üretimi
+
 Depremde yıkılmayan, hasar almayan, depremden hemen sonra, hatta deprem anında dahi hizmet vermeye devam eden yapılarımız ise, Türkiye’nin de depreme karşı çaresiz olmadığının kanıtı. 
 
 Buna karşılık yıkılmayarak can kaybını önleyen pek çok sayıda yapı ise, tasarım öngörüleri kapsamında hasar almak suretiyle can güvenliğini sağlamış ancak çeşitli derecelerde hasar sebebiyle önemli ekonomik kayıplara neden olmuştur.
