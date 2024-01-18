@@ -1,8 +1,8 @@
 ---
 title: "Tech Without Big Tech"
-subtitle: ""
-date: 2024-01-18T12:08:10Z
-lastmod: 2024-01-18T12:08:10Z
+subtitle: "An amateur's guide to losing the big-tech."
+date: 2021-11-26T22:35:10Z
+lastmod: 2021-11-26T22:35:10Z
 draft: false
 author: "Abdullah Gulabi"
 authorLink: ""
