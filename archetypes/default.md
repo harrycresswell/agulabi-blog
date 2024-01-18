@@ -4,14 +4,14 @@ subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-author: [author]
+author: "Abdullah Gulabi"
 authorLink: ""
 description: ""
 license: ""
 images: []
 
 tags: []
-categories: []
+categories: ["Blog", "Mühendis Rehberi", "Excel Uygulamaları"]
 
 featuredImage: ""
 featuredImagePreview: ""
