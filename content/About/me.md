@@ -3,8 +3,8 @@ title: "Me"
 subtitle: ""
 date: 2024-01-18T22:49:07Z
 lastmod: 2024-01-18T22:49:07Z
-draft: true
-author: [author]
+draft: false
+author: ""
 authorLink: ""
 description: ""
 license: ""
