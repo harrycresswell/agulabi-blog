@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: ["privacy", "surveillance", "tech", "data sovereignty"]
-categories: ["articles"]
+categories: ["Blog"]
 
 featuredImage: ""
 featuredImagePreview: ""
