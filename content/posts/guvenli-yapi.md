@@ -45,14 +45,14 @@ Türkiye'de bu alanda önemli akademik çalışmalar, kamu ve özel projelerin �
 Yapı yaşam döngüsü, yapı ihtiyacının oluşmasından yapının ekonomik ömrünü tamamlamasına kadar olan süreci ifade eder. Yapı Bilgi Yönetimi (Building Information Management, BIM) ise bu döngüdeki veri ve bilginin oluşturulması, dağıtılması ve saklanmasını konu alır. Ortak Veri Ortamı (Common Data Environment, CDE) ise tüm bunlara imkan sağlayan bilgi sistemini ifade eder.
 
 ![yapi-yasam-dongusu](yapi-yasam-dongusu.png "yapi-yasam-dongusu")
-##### Yapı Yaşam Döngüsü
+### Yapı Yaşam Döngüsü
 CDE’leri gözde canlandırmak için bir bilgi paylaşım platformu olarak e-nabız sistemine benzetebiliriz. Nasıl sağlık ile ilgili tüm rapor, laboratuar sonuçları, muayene bilgileri ve hatta akıllı saatten aktarılan canlı bilgiler kayıt altına alınabiliyor ise, benzer bir sistemin bir yapı için kurulmasını düşünebiliriz.
 
 Yapı yaşam döngüsü boyunca tüm aktivitlerin kayıt altında tutulduğu bir düzende, hiçbir sorumlu ortadan kaybolamayacak ve olası bir enkaz halinde kusurlu tarafın tespiti de kolaylaşacaktır.
 
 ## Enkaza giden süreç
 ![enkaz](enkaz.png "enkaz")
-##### Enkaza giden sürecin kök neden analizi
+### Enkaza giden sürecin kök neden analizi
 Bir yapının enkaz haline gelmesinin pek çok nedeni olabilir.
 
 Tüm bu süreçleri yönetebilecek yerli ve yabancı yazılım çözümleri bulunduğu gibi, e-imza ve diğer kriptografik yöntemler ile de güvenilirlikleri arttırılabilirler.
