@@ -8,7 +8,7 @@ baseURL = "/"
 theme = "LoveIt"
 
 # website title
-title = "My New Hugo Site"
+title = "Abdullah's homepage - a curious engineer"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -285,7 +285,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     RootMe= ""
     Phone = ""
     Email = ""
-    RSS = false # 
+    RSS = true # 
 
   #  Page global config
   [params.page]
