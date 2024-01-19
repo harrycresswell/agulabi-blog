@@ -70,7 +70,7 @@ The magnificent dome of the Hagia Sophia in Constantinople located in the histor
 
 As technology made feats like 31 meter clear spans a more common achievement, complacency began rearing its ugly head. 
 
-## Complacency in Action
+### Complacency in Action
 <img src="https://abdullah.gula.bi/user/pages/02.blog/05.complaceny-in-engineering-updated/mainspan.png" alt="The bridge as designed" width="600"/>
 <p align="center"> The bridge as designed. </p>
 
