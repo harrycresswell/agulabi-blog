@@ -1,7 +1,7 @@
 ---
 title: "Riskli Yapilar"
 subtitle: ""
-date: 2024-01-20T13:34:46Z
+date: 2019-10-21T21:48:46Z
 lastmod: 2024-01-20T13:34:46Z
 draft: false
 author: "Abdullah Gulabi"
