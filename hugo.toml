@@ -544,7 +544,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.cookieconsent.content]
       message = "This site doesn't serve cookies, that's it."
       dismiss = "Thanks!"
-      link = ""
+      link = "/privacy"
 
   #  CDN config for third-party library files
   [params.cdn]
