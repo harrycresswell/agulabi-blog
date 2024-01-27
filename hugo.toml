@@ -542,8 +542,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = true
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
+      message = "This site doesn't serve cookies, that's it."
+      dismiss = "Thanks!"
       link = ""
 
   #  CDN config for third-party library files
