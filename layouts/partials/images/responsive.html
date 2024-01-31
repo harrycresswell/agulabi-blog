@@ -1,0 +1,24 @@
+<picture>
+  <source 
+    type="image/avif" 
+    srcset="
+      {{ .baseURL }}f_avif,q_auto,w_500/{{ .Params.image }} 500w,
+      {{ .baseURL }}f_avif,q_auto,w_710/{{ .Params.image }} 710w,
+      {{ .baseURL }}f_avif,q_auto,w_1000/{{ .Params.image }} 1000w,
+      {{ .baseURL }}f_avif,q_auto,w_1420/{{ .Params.image }} 1420w">
+  <source 
+    type="image/webp"
+    srcset="
+      {{ .baseURL }}f_webp,q_auto,w_500/{{ .Params.image }} 500w,
+      {{ .baseURL }}f_webp,q_auto,w_710/{{ .Params.image }} 710w,
+      {{ .baseURL }}f_webp,q_auto,w_1000/{{ .Params.image }} 1000w,
+      {{ .baseURL }}f_webp,q_auto,w_1420/{{ .Params.image }} 1420w">
+  <img 
+    srcset="
+      {{ .baseURL }}f_jpg,w_500/{{ .Params.image }} 500w,
+      {{ .baseURL }}f_jpg,w_710/{{ .Params.image }} 710w,
+      {{ .baseURL }}f_jpg,w_1000/{{ .Params.image }} 1000w,
+      {{ .baseURL }}f_jpg,w_1420/{{ .Params.image }} 1420w"
+    src="{{ .baseURL }}f_jpg,w_500/{{ .Params.image }}" 
+    alt="{{ .Params.image_alt }}">
+</picture>

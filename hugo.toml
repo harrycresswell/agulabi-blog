@@ -94,6 +94,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   description = "This is my cool site"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
+  # Cloudinary
+  cloudinary_url = "https://res.cloudinary.com/gulabi/image/upload/"
 
   # Header config
   [params.header]
