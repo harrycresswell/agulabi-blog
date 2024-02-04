@@ -8,7 +8,8 @@ author: "Abdullah Gulabi"
 authorLink: ""
 description: ""
 license: ""
-images: [enkaz.jpg]
+
+images: ["/enkaz.jpg"]	
 
 tags: ["BIM", "ISO 19650", "Yapı Bilgi Yönetimi", "deprem", "CARES", "kalite", "güvence", "inşaat mühendisliği"]
 categories: ["Mühendis Rehberi"]
