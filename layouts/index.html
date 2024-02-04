@@ -36,6 +36,8 @@
                 {{- .Render "summary" -}}
             {{- end -}}
             {{- partial "paginator.html" . -}}
+			{{ partial "images/responsive.html" (dict "Params" .Params "baseURL" $.Site.Params.cloudinary_url ) }}
+
         {{- end -}}
     </div>
 {{- end -}}

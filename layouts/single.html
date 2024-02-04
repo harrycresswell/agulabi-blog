@@ -20,7 +20,7 @@
 
         {{- /* Comment */ -}}
         {{- partial "comment.html" . -}}
+		{{ partial "images/responsive.html" (dict "Params" .Params "baseURL" $.Site.Params.cloudinary_url ) }}
     </div>
-	{{ partial "images/responsive.html" (dict "Params" .Params "baseURL" $.Site.Params.cloudinary_url ) }}
 
 {{- end -}}
