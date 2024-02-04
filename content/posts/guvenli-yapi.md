@@ -8,8 +8,7 @@ author: "Abdullah Gulabi"
 authorLink: ""
 description: ""
 license: ""
-
-images: ["/enkaz.jpg"]	
+images: []
 
 tags: ["BIM", "ISO 19650", "Yapı Bilgi Yönetimi", "deprem", "CARES", "kalite", "güvence", "inşaat mühendisliği"]
 categories: ["Mühendis Rehberi"]
@@ -107,7 +106,7 @@ CDE’leri gözde canlandırmak için bir bilgi paylaşım platformu olarak e-na
 Yapı yaşam döngüsü boyunca tüm aktivitlerin kayıt altında tutulduğu bir düzende, hiçbir sorumlu ortadan kaybolamayacak ve olası bir enkaz halinde kusurlu tarafın tespiti de kolaylaşacaktır.
 
 ## Enkaza giden süreç
-![enkaz](enkaz.jpg "enkaz")
+![enkaz](/enkaz.jpg "enkaz")
 ### Enkaza giden sürecin kök neden analizi
 Bir yapının enkaz haline gelmesinin pek çok nedeni olabilir.
 
