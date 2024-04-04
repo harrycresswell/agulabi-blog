@@ -101,6 +101,8 @@ Yapı yaşam döngüsü, yapı ihtiyacının oluşmasından yapının ekonomik �
 
 ![yapi-yasam-dongusu](https://res.cloudinary.com/gulabi/image/upload/v1706365713/cld-sample-4.jpg "yapi-yasam-dongusu")
 
+![This image is not included in gallery as it doesn’t have a caption](https://res.cloudinary.com/gulabi/image/upload/v1706365712/cld-sample-3.jpg)
+
 ### Yapı Yaşam Döngüsü
 CDE’leri gözde canlandırmak için bir bilgi paylaşım platformu olarak e-nabız sistemine benzetebiliriz. Nasıl sağlık ile ilgili tüm rapor, laboratuar sonuçları, muayene bilgileri ve hatta akıllı saatten aktarılan canlı bilgiler kayıt altına alınabiliyor ise, benzer bir sistemin bir yapı için kurulmasını düşünebiliriz.
 

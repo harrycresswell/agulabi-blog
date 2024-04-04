@@ -215,7 +215,7 @@
     }
 
     figure {
-      margin: .5rem;
+      margin: 0;
       text-align: center;
 
       .image-caption:not(:empty) {
@@ -236,6 +236,17 @@
         overflow: hidden;
       }
     }
+
+    picture {
+      display: block;
+      margin-inline: .5rem;
+      margin-block-start: 1.5rem;
+    
+      img {
+        width: 100%;
+      }
+    }
+
 
     blockquote {
       display: block;
