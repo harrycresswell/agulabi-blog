@@ -1,10 +1,69 @@
+<!-- Grab Cloudinary base URl from site config -->
+{{ $cloudinary_url := site.Params.cloudinary_url }}
+
+<!-- Create localised scratch, see: https://gohugo.io/functions/scratch/#the-local-newscratch -->
+{{ $indexScratch := newScratch }}
+
+{{ $imageQuality := "50" }}
+{{ $imageSm := "400" }}
+{{ $imageMd := "600" }}
+{{ $imageLg := "800" }}
+{{ $imageXl := "1000" }}
+<!-- At follow browser is following width and above -->
+{{ $sizesMinWidth := "768px" }}
+<!-- Make images the following size -->
+{{ $sizesSize := "50vw" }}
+<!-- Else make images the following size }} -->
+{{ $sizesElse := "100vw" }}
+<!-- Load images later -->
+{{ $loading := "lazy" }}
+{{ $decoding  := "async" }}
+
 {{- if .Title -}}
-    <figure>
-        {{- dict "Src" .Destination "Title" .Text "Caption" .Title "Linked" true "Resources" .Page.Resources | partial "plugin/img.html" -}}
-        <figcaption class="image-caption">
-            {{- .Title | safeHTML -}}
-        </figcaption>
-    </figure>
+  <figure>
+      {{- partial "plugin/img.html"
+        (dict 
+          "indexScratch" $indexScratch 
+          "cloudinary_url" $cloudinary_url 
+          "imageQuality" $imageQuality
+          "imageSm" $imageSm 
+          "imageMd" $imageMd 
+          "imageLg" $imageLg 
+          "imageXl" $imageXl 
+          "decoding" $decoding
+          "loading" $loading
+          "sizesMinWidth" $sizesMinWidth 
+          "sizesSize" $sizesSize 
+          "sizesElse" $sizesElse
+          "Src" .Destination 
+          "Title" .Text 
+          "Caption" .Title 
+          "Linked" true 
+          "Resources" .Page.Resources
+        ) 
+      -}}
+      <figcaption class="image-caption">
+          {{- .Title | safeHTML -}}
+      </figcaption>
+  </figure>
 {{- else -}}
-    {{- dict "Src" .Destination "Title" .Text "Resources" .Page.Resources | partial "plugin/img.html" -}}
+    {{- partial "plugin/img.html" 
+      (dict 
+        "indexScratch" $indexScratch 
+        "cloudinary_url" $cloudinary_url 
+        "imageQuality" $imageQuality
+        "imageSm" $imageSm 
+        "imageMd" $imageMd 
+        "imageLg" $imageLg 
+        "imageXl" $imageXl 
+        "decoding" $decoding
+        "loading" $loading
+        "sizesMinWidth" $sizesMinWidth 
+        "sizesSize" $sizesSize 
+        "sizesElse" $sizesElse
+        "Src" .Destination 
+        "Title" .Text 
+        "Resources" .Page.Resources
+      )
+    -}}
 {{- end -}}

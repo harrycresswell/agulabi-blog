@@ -1,7 +1,38 @@
 {{- /* lazysizes and lightgallery */ -}}
+{{/*  Grab full image URL  */}}
 {{- $src := .Src -}}
+<!-- create asset var that splits the full URL and grabs the relative path -->
+{{ .indexScratch.Set "cloudinaryAssetName" (index (split $src  "/") (sub (len (split $src "/")) 1)) }}
+{{ $ImagePath := .indexScratch.Get "cloudinaryAssetName"  }}
+<!-- Grab cloudinary baseurl from the config file -->
+{{ $baseURL := .cloudinary_url }}
+<!-- Add loading and decoding -->
+{{ $loading := .loading }}
+{{ $decoding := .decoding }}
+{{ $loadImage := "" }}
+{{ if eq $loading "eager" }}
+  {{ $loadImage = "eager" }}
+{{ else if eq $loading "lazy" }}
+  {{ $loadImage = "lazy" }}
+{{ end }}
+<!-- Grab dict values and store as variables -->
+{{ $imageRatio := .imageRatio }}
+{{ $sizesMinWidth := .sizesMinWidth }}
+{{ $sizesSize := .sizesSize }}
+{{ $sizesElse := .sizesElse }}
+{{ $imageQuality := .imageQuality }}
+{{ $imageSm := .imageSm }}
+{{ $imageMd := .imageMd }}
+{{ $imageLg := .imageLg }}
+{{ $imageXl := .imageXl }}
+
+{{ $imageAlt := .imageAlt }}
+
 {{- $width := .Width -}}
 {{- $height := .Height -}}
+{{ $imageTitle := .Text }}
+{{ $imageCaption := .Title }}
+
 {{- with dict "Path" $src "Resources" .Resources | partial "function/resource.html" -}}
     {{- $src = .RelPermalink -}}
     {{- $width = $width | default .Width -}}
@@ -22,25 +53,70 @@
 {{- $loading := resources.Get "svg/loading.svg" | minify -}}
 {{- if .Linked -}}
     <a class="lightgallery" href="{{ $large | safeURL }}" title="{{ .Title | default $alt }}" data-thumbnail="{{ $small | safeURL }}"{{ with .Caption }} data-sub-html="<h2>{{ . }}</h2>{{ with $.Title }}<p>{{ . }}</p>{{ end }}"{{ end }}{{ with .Rel }} rel="{{ . }}"{{ end }}>
-        <img
+        <picture {{ with $imageRatio }}class="aspect-ratio-{{ . }}"{{ end }}>
+          <source 
+            type="image/avif" 
             class="lazyload{{ with .Class }} {{ . }}{{ end }}"
-            src="{{ $loading.RelPermalink }}"
-            data-src="{{ $src | safeURL }}"
-            data-srcset="{{ $small | safeURL }}, {{ $src | safeURL }} 1.5x, {{ $large | safeURL }} 2x"
-            data-sizes="auto"
-            alt="{{ $alt }}"
+            sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+            srcset="{{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ .imageSm }}w,
+                    {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageMd }}w,
+                    {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageLg }}w,
+                    {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageXl }}w">
+          <source
+            type="image/webp"
+            class="lazyload{{ with .Class }} {{ . }}{{ end }}"
+            sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+            srcset="{{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageSm }}w,
+                    {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageMd }}w,
+                    {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageLg }}w,
+                    {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageXl }}w" >
+          <img 
+            class="lazyload{{ with .Class }} {{ . }}{{ end }}"
+            sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+            srcset="{{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageSm }}w,
+                    {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageMd }}w,
+                    {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageLg }}w,
+                    {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageXl }}w"
+            src="{{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }}" 
+            alt="{{- with $imageCaption -}}{{ . }}{{ else }}{{ $alt }}{{- end -}}"
             {{- with $width }} width="{{ . }}"{{ end }}
-            {{- with $height }} height="{{ . }}"{{ end }} />
+            {{- with $height }} height="{{ . }}"{{ end }}
+            {{ with $loadImage }}loading="{{ . }}"{{ end }}
+            {{ with $decoding }}decoding="{{ . }}"{{ end }}
+            />
+        </picture>   
     </a>
 {{- else -}}
-    <img
-        class="lazyload{{ with .Class }} {{ . }}{{ end }}"
-        src="{{ $loading.RelPermalink }}"
-        data-src="{{ $src | safeURL }}"
-        data-srcset="{{ $small | safeURL }}, {{ $src | safeURL }} 1.5x, {{ $large | safeURL }} 2x"
-        data-sizes="auto"
-        alt="{{ $alt }}"
-        title="{{ .Title | default $alt }}"
-        {{- with $width }} width="{{ . }}"{{ end }}
-        {{- with $height }} height="{{ . }}"{{ end }} />
+  <picture {{ with $imageRatio }}class="aspect-ratio-{{ . }}"{{ end }}>
+    <source 
+      type="image/avif" 
+      class="lazyload{{ with .Class }} {{ . }}{{ end }}"
+      sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+      srcset="{{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ .imageSm }}w,
+              {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageMd }}w,
+              {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageLg }}w,
+              {{ $baseURL }}f_avif,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} {{ $imageXl }}w">
+    <source
+      type="image/webp"
+      class="lazyload{{ with .Class }} {{ . }}{{ end }}"
+      sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+      srcset="{{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageSm }}w,
+              {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageMd }}w,
+              {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageLg }}w,
+              {{ $baseURL }}f_webp,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} {{ $imageXl }}w" >
+    <img 
+      class="lazyload{{ with .Class }} {{ . }}{{ end }}"
+      sizes="(min-width: {{ $sizesMinWidth }}) {{ $sizesSize }}, {{ $sizesElse }}"
+      srcset="{{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageSm }}w,
+              {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageMd }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageMd }}w,
+              {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageLg }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageLg }}w,
+              {{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageXl }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }} {{ $imageXl }}w"
+      src="{{ $baseURL }}f_jpg,q_{{ $imageQuality }},w_{{ $imageSm }}/{{ $ImagePath | replaceRE ".jpeg|.JPG|.png|.PNG" ".jpg" }}" 
+      alt="{{- with $imageCaption -}}{{ . }}{{ else }}{{ $alt }}{{- end -}}"
+      {{- with $width }} width="{{ . }}"{{ end }}
+      {{- with $height }} height="{{ . }}"{{ end }}
+      {{ with $loadImage }}loading="{{ . }}"{{ end }}
+      {{ with $decoding }}decoding="{{ . }}"{{ end }}
+      />
+  </picture>         
 {{- end -}}
