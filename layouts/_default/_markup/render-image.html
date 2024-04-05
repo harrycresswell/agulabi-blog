@@ -21,7 +21,7 @@
 
 {{- if .Title -}}
   <figure>
-      {{- partial "plugin/img.html"
+      {{- partial "plugin/img-cld.html"
         (dict 
           "indexScratch" $indexScratch 
           "cloudinary_url" $cloudinary_url 
@@ -47,7 +47,7 @@
       </figcaption>
   </figure>
 {{- else -}}
-    {{- partial "plugin/img.html" 
+    {{- partial "plugin/img-cld.html" 
       (dict 
         "indexScratch" $indexScratch 
         "cloudinary_url" $cloudinary_url 
