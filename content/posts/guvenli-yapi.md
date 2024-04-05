@@ -110,6 +110,7 @@ Yapı yaşam döngüsü boyunca tüm aktivitlerin kayıt altında tutulduğu bir
 
 ## Enkaza giden süreç
 ![enkaz](https://res.cloudinary.com/gulabi/image/upload/v1706365676/sample.jpg "enkaz")
+
 ### Enkaza giden sürecin kök neden analizi
 Bir yapının enkaz haline gelmesinin pek çok nedeni olabilir.
 
