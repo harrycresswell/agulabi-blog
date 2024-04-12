@@ -2,8 +2,10 @@
 {{/*  Grab full image URL  */}}
 {{- $src := .Src -}}
 <!-- create asset var that splits the full URL and grabs the relative path -->
-{{ .indexScratch.Set "cloudinaryAssetName" (index (split $src  "/") (sub (len (split $src "/")) 1)) }}
+{{ .indexScratch.Set "cloudinaryAssetName" (index (split $src  "https://res.cloudinary.com/gulabi/image/upload/") (sub (len (split $src "https://res.cloudinary.com/gulabi/image/upload/")) 1)) }}
+
 {{ $ImagePath := .indexScratch.Get "cloudinaryAssetName"  }}
+
 <!-- Grab cloudinary baseurl from the config file -->
 {{ $baseURL := .cloudinary_url }}
 <!-- Add loading and decoding -->

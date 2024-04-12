@@ -101,6 +101,8 @@ Yapı yaşam döngüsü, yapı ihtiyacının oluşmasından yapının ekonomik �
 
 ![yapi-yasam-dongusu](https://res.cloudinary.com/gulabi/image/upload/v1706365713/cld-sample-4.jpg "yapi-yasam-dongusu")
 
+![caption4](https://res.cloudinary.com/gulabi/image/upload/v1706365681/samples/food/fish-vegetables.jpg "caption44")
+
 ![This image is not included in gallery as it doesn’t have a caption](https://res.cloudinary.com/gulabi/image/upload/v1706365712/cld-sample-3.jpg)
 
 ### Yapı Yaşam Döngüsü
